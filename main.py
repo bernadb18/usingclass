@@ -1,10 +1,11 @@
 class Animals:
-    def __init__(self, name , type , breed):
+    def __init__(self, name , type):
         self.name = name
         self.type = type
-        self.breed = breed
+        
     def Talk(self):
          print(f"{self.name} {self.type}")
+        
 class dog(Animals):
     def Talk(self):
          print(f"{self.name} the {self.type} says Woof!")
@@ -17,7 +18,7 @@ def animelspeak(animals):
      animals.Talk()
 
 
-dog1 = dog("Buddy", "Dog", "Golden Retriever")
-cat2 = cat("Whiskers", "Cat", "Gray")
+dog1 = dog("Buddy", "Dog")
+cat2 = cat("Whiskers", "Cat")
 animelspeak(cat2)
 animelspeak(dog1)
